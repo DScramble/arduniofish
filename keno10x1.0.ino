@@ -82,7 +82,7 @@ void setup() {
 
     if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
         Serial.println(F("SSD1306 allocation failed"));
-        delay(2000);
+        delay(500);
         for(;;);
     }
 
@@ -92,7 +92,7 @@ void setup() {
 
 void loop() {
     // Check for the rare event
-    if (random(80537376367104) == 0) {
+    if (random(67104) == 0) {
         // Rare event: Fully white screen
         display.fillScreen(1);
     } else {
