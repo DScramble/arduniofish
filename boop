@@ -75,7 +75,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 int verticalPosition = 0;
 const int verticalAmplitude = 20;  // Amplitude of the swimming motion
-const int verticalFrequency = 50;   // Frequency of the swimming motion
+const int verticalFrequency = 45;   // Frequency of the swimming motion
 int iterationCounter = 0;
 
 bool freezeLoop = false;
@@ -140,7 +140,6 @@ void loop() {
 
   if (!freezeLoop) {
     iterationCounter++;
-    delay(5);  // Adjust the delay for a smoother swimming motion
+    delay(1);  // Adjust the delay for a smoother swimming motion
   }
 }
-
